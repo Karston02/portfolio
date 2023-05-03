@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my personal website! In it, I will showcase my recent projects, experience, and skills.
+I created this project using React! I also utilized ThreeJS, JS, HTML, and CSS. My goal with this 
+project, other than to showcase my work, was to learn- and learning is indeed what I did. I learned 
+very basic Blender creations and object geometry with ThreeJS, how to properly style with CSS, and of 
+course optimizing states and effects with JS.
+
 
 ## Available Scripts
 
