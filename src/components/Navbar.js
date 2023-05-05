@@ -20,17 +20,17 @@ function Navbar() {
 
   useEffect(() => {
     showButton();
+    window.addEventListener("resize", showButton);
+    return () => window.removeEventListener("resize", showButton);
   }, []);
-
-  window.addEventListener("resize", showButton);
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            <a>Karston | </a>
-            <i class="fa-solid fa-laptop-code fa-fw" />
+            <p>Karston | </p>
+            <i className="fa-solid fa-laptop-code fa-fw" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -69,16 +69,19 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link
-                to="/contact"
-                className="nav-links-mobile"
-                onClick={closeMobileMenu}
-              >
-                Contact
-              </Link>
+              
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">CONTACT</Button>}
+          {button && (
+            <a
+              href={process.env.PUBLIC_URL + "/Kuciemba, Karston - Resume.pdf"}
+              className="btn--outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              RESUME
+            </a>
+          )}
         </div>
       </nav>
     </>
