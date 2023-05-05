@@ -1,0 +1,5 @@
+.skills-container {
+    height: 100vh;
+    background-color: #000;
+    scroll-snap-align: center;
+}
