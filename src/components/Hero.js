@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { Suspense, useLayoutEffect, useState } from 'react';
 import './Hero.css';
 import * as THREE from 'three';
 import { Canvas } from '@react-three/fiber'
@@ -7,13 +7,27 @@ import { OrbitControls, Text } from '@react-three/drei';
 import starTexture from '../images/star.jpeg';
 import starTexture2 from '../images/star2.jpeg';
 import starTexture3 from '../images/star3.jpeg';
-import { FontLoader } from 'three/addons/loaders/FontLoader.js'
 
 const textureLoader = new THREE.TextureLoader();
-const fontLoader = new FontLoader();
-const font = fontLoader.load('fonts/helvetiker_bold.typeface.json')
-function Hero() {
 
+function Hero() {
+  const [fontSize, setFontSize] = useState(4);
+
+  useLayoutEffect(() => {
+    function updateFontSize() {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 600) {
+        setFontSize(2);
+      } else if (screenWidth < 900) {
+        setFontSize(3);
+      } else {
+        setFontSize(4);
+      }
+    }
+    updateFontSize();
+    window.addEventListener("resize", updateFontSize);
+    return () => window.removeEventListener("resize", updateFontSize);
+  }, []);
 
   return (
     <section className="hero-container">
@@ -42,10 +56,10 @@ function Hero() {
           <directionalLight position={[-2, 5, 2]} intensity={1}/>
           <Suspense fallback={null}>
             <Globe/>
-            <Text position={[0, 20, -35]} fontSize={7} color="#2596be" font={font}>
+            <Text position={[0, 20, -35]} fontSize={fontSize + 1.5} color="#2596be">
               Hey, I'm <meshPhongMaterial attach="material" color="0x2596be"/>Karston!
             </Text>
-            <Text position={[0, 20, -50]} fontSize={4} color="white" font={font}>
+            <Text position={[0, 20, -50]} fontSize={fontSize} color="white">
               I develop software and web applications!
             </Text>
           </Suspense>
