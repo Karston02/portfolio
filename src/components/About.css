@@ -1,0 +1,133 @@
+.about-container {
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-inner-container {
+    background-image: url(../images/galaxy-bg.jpeg);
+    background-size: cover;
+    scroll-snap-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    top:0;
+    left: 0;
+  }
+  
+  .aboutme-flex {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    flex: 1;
+  }
+  
+  .aboutme-flex:first-child {
+    margin-right: 30px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  
+  .aboutme-text {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutme-design {
+    flex: 1.2;
+  }
+
+  .aboutme-text h1 {
+    color: #2596be;
+    font-size: 4em;
+    font-family: headerFont;
+    text-decoration: underline hotpink;
+    padding-bottom: 10px;
+    text-shadow: 2px 3px 4px hotpink;
+    align-self: flex-start;
+  }
+
+  .aboutme-text p {
+    font-size: 1.6em;
+    font-family: textFont;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.2px;
+    align-self: flex-start;
+  }
+
+  .pad {
+    padding-bottom: 60px;
+  }
+
+  @font-face {
+    font-family: headerFont;
+    src: url(../fonts/aboutme-header-font.otf)
+  }
+  @font-face {
+    font-family: textFont;
+    src: url(../fonts/aboutme-text-font.otf)
+  }
+
+  .aboutme-design {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutme-design img {
+    animation: animate 2s infinite ease alternate;
+  }
+
+  @keyframes animate {
+    to {
+        transform: translateY(20px);
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .about-inner-container {
+      flex-direction: column;
+    }
+    
+    .aboutme-flex:first-child {
+      margin-right: 0;
+      margin-bottom: 30px;
+      flex: 2;
+    }
+
+    .aboutme-design img {
+        height: 400px;
+        width: 335px;
+    }
+
+    .aboutme-text {
+        padding: none;
+    }
+
+    .pad {
+        padding-bottom: 20px;
+    }
+
+    .aboutme-text h1 {
+        font-size: 2.2em;
+    }
+
+    .aboutme-text p {
+        font-size: 0.95em;
+        -webkit-text-stroke-width: 0.8px;
+    }
+  }
+  
