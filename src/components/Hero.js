@@ -10,6 +10,8 @@ import starTexture3 from '../images/star3.jpeg';
 
 const textureLoader = new THREE.TextureLoader();
 
+const font = '../'
+
 function Hero() {
   const [fontSize, setFontSize] = useState(4);
 
@@ -31,40 +33,38 @@ function Hero() {
 
   return (
     <section className="hero-container">
-      <div className="hero-inner-container">
-        <Canvas className="canvas">
-          {Array.from({ length: 70 }).map((_, i) => (
-            <mesh key={i} position={[Math.random() * 100 - 50, Math.random() * 100 - 50, Math.random() * 100 - 50]}>
-              <sphereGeometry args={[0.5, 32, 32]} />
-              <meshStandardMaterial map={textureLoader.load(starTexture)} />
-            </mesh>
-          ))}
-          {Array.from({ length: 70 }).map((_, i) => (
-            <mesh key={i} position={[Math.random() * 100 - 50, Math.random() * 100 - 50, Math.random() * 100 - 50]}>
-              <sphereGeometry args={[0.5, 32, 32]} />
-              <meshStandardMaterial map={textureLoader.load(starTexture2)} />
-            </mesh>
-          ))}
-          {Array.from({ length: 70 }).map((_, i) => (
-            <mesh key={i} position={[Math.random() * 100 - 50, Math.random() * 100 - 50, Math.random() * 100 - 50]}>
-              <sphereGeometry args={[0.5, 32, 32]} />
-              <meshStandardMaterial map={textureLoader.load(starTexture3)} />
-            </mesh>
-          ))}
-          <OrbitControls enableZoom={false}/>
-          <ambientLight intensity={0.5}/>
-          <directionalLight position={[-2, 5, 2]} intensity={1}/>
-          <Suspense fallback={null}>
-            <Globe/>
-            <Text position={[0, 20, -35]} fontSize={fontSize + 1.5} color="#2596be">
-              Hey, I'm <meshPhongMaterial attach="material" color="0x2596be"/>Karston!
-            </Text>
-            <Text position={[0, 20, -50]} fontSize={fontSize} color="white">
-              I develop software and web applications!
-            </Text>
-          </Suspense>
-        </Canvas>
-      </div>
+      <Canvas className="canvas">
+        {Array.from({ length: 70 }).map((_, i) => (
+          <mesh key={i} position={[Math.random() * 100 - 50, Math.random() * 100 - 50, Math.random() * 100 - 50]}>
+            <sphereGeometry args={[0.5, 32, 32]} />
+            <meshStandardMaterial map={textureLoader.load(starTexture)} />
+          </mesh>
+        ))}
+        {Array.from({ length: 70 }).map((_, i) => (
+          <mesh key={i} position={[Math.random() * 100 - 50, Math.random() * 100 - 50, Math.random() * 100 - 50]}>
+            <sphereGeometry args={[0.5, 32, 32]} />
+            <meshStandardMaterial map={textureLoader.load(starTexture2)} />
+          </mesh>
+        ))}
+        {Array.from({ length: 70 }).map((_, i) => (
+          <mesh key={i} position={[Math.random() * 100 - 50, Math.random() * 100 - 50, Math.random() * 100 - 50]}>
+            <sphereGeometry args={[0.5, 32, 32]} />
+            <meshStandardMaterial map={textureLoader.load(starTexture3)} />
+          </mesh>
+        ))}
+        <OrbitControls enableZoom={false}/>
+        <ambientLight intensity={0.5}/>
+        <directionalLight position={[-2, 5, 2]} intensity={1}/>
+        <Suspense fallback={null}>
+          <Globe/>
+          <Text position={[0, 20, -35]} fontSize={fontSize + 1.4} color="#2596be">
+            HEY, I'M KARSTON!
+          </Text>
+          <Text position={[0, 20, -50]} fontSize={fontSize * 0.9} color="white">
+            I LIKE BUILDING SOFTWARE 
+          </Text>
+        </Suspense>
+      </Canvas>
     </section>
   )
 }

@@ -4,22 +4,21 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Experience from './components/Experience';
+import About from './components/About';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar/>
-        <Hero/>
-        <Skills/>
-        <Projects/>
-        <Experience/>
+        <Navbar />
         <Routes>
-          <Route path="/" exact />
+          <Route path="/" element={<Hero />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/About" element={<About />} />
         </Routes>
+        <Contact />
       </Router>
     </>
   );
