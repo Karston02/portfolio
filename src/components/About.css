@@ -36,7 +36,6 @@
   }
   
   .aboutme-flex:first-child {
-    margin-right: 30px;
     padding-left: 4%;
     padding-right: 4%;
   }
@@ -48,6 +47,10 @@
 
   .aboutme-design {
     flex: 1.2;
+  }
+
+  .stack {
+    position: absolute;
   }
 
   .aboutme-text h1 {
@@ -88,7 +91,7 @@
   }
 
   .aboutme-design img {
-    animation: animate 2s infinite ease alternate;
+    animation: animate 1s infinite ease alternate;
   }
 
   @keyframes animate {
@@ -162,6 +165,13 @@
     .aboutme-text p {
         font-size: 0.85em;
         -webkit-text-stroke-width: 0.6px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .aboutme-design img {
+      height: 250px;
+      width: 210px;
     }
   }
   
