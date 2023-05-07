@@ -1,5 +1,74 @@
 .skills-container {
+    width: 100%;
     height: 100vh;
-    background-color: #000;
-    scroll-snap-align: center;
 }
+
+
+.skills-inner-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(../images/galaxy-bg.jpeg);
+    background-size: cover;
+    overflow-y: auto;
+  }
+  
+  .skills-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #2596be;
+    font-size: 4em;
+    font-family: headerFont;
+    text-decoration: underline #2596be;
+    padding-bottom: 10px;
+    text-shadow: 2px 3px 4px hotpink;
+    margin-top: 50px;
+  }
+  
+  .skill-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    height: 700px;
+  }
+  
+  .skill-box > .skills-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 950px) {
+    .skill-box {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      height: auto;
+    }
+
+    .skills-title {
+        font-size: 1.8rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .skill-box {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      height: auto;
+    }
+  }
+
+  
+  
+  .skill-box > .skills-item > * {
+    margin-bottom: 10px;
+  }
+  
+  .stack {
+    position: relative;
+    pointer-events: none;
+  }
+  
