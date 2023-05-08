@@ -10,8 +10,6 @@ import starTexture3 from '../images/star3.jpeg';
 
 const textureLoader = new THREE.TextureLoader();
 
-const font = '../'
-
 function Hero() {
   const [fontSize, setFontSize] = useState(4);
 

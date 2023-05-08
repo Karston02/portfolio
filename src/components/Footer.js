@@ -24,6 +24,7 @@ function Footer() {
           <a
             href="mailto:kuciembakarston@gmail.com?subject=Portfolio Inquiry"
             target="_blank"
+            rel="noreferrer"
             aria-label="Mail"
           >
             <i class="fa-regular fa-envelope"></i>

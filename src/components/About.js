@@ -32,7 +32,7 @@ function About() {
               />
             </Sphere>
           </Canvas>
-          <img className="stack" src={moonMan} />
+          <img className="stack" src={moonMan} alt="Moon man" />
         </div>
       </div>
     </section>

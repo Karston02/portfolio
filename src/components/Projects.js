@@ -30,8 +30,8 @@ function Projects() {
             </div>
             <p>{movieAppDesc}</p>
             <div className="project-buttons">
-              <a href="https://www.project1-demo.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
-              <a href="https://github.com/project1-source" target="_blank" rel="noopener noreferrer">Source Code</a>
+              <a href="https://karston-moviehub.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/Karston02/movie-database" target="_blank" rel="noopener noreferrer">Source Code</a>
             </div>
           </div>
         </div>
@@ -49,8 +49,8 @@ function Projects() {
             </div>
             <p>{portfolioDesc}</p>
             <div className="project-buttons">
-              <a href="https://www.project2-demo.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
-              <a href="https://github.com/project2-source" target="_blank" rel="noopener noreferrer">Source Code</a>
+              <a href="https://karston.dev" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/Karston02/portfolio" target="_blank" rel="noopener noreferrer">Source Code</a>
             </div>
           </div>
         </div>
@@ -67,8 +67,8 @@ function Projects() {
             </div>
             <p>{blackjackDesc}</p>
             <div className="project-buttons">
-              <a href="https://www.project3-demo.com" target="_blank" rel="noopener noreferrer">IN PROGRESS</a>
-              <a href="https://github.com/project3-source" target="_blank" rel="noopener noreferrer">Source Code</a>
+              <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">IN PROGRESS</a>
+              <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Source Code</a>
             </div>
           </div>
         </div>
