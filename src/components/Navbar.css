@@ -133,6 +133,14 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
+    .navbar-logo p {
+      font-size: 2rem;
+    }
+
+    .navbar-logo i {
+      font-size: 2rem;
+    }
   
     .menu-icon {
       display: block;

@@ -23,9 +23,9 @@ function About() {
             <OrbitControls enableZoom={false} />
             <ambientLight intensity={1} />
             <directionalLight position={[7, 2, 3]}/>
-            <Sphere args={[1, 100, 200]} scale={1.4}>
+            <Sphere args={[1, 100, 200]} scale={1.2}>
               <MeshDistortMaterial
-                color="#B629CF"
+                color="#4E0CB2"
                 attach="material"
                 distort={0.5}
                 speed={2.5}
