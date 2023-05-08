@@ -1,18 +1,21 @@
 .container {
-    height: 8vh;
-    background-color: #242424;
-    display: flex;
-    align-items: center;
+  height: auto;
+  background-color: #242424;
+  display: flex;
+  align-items: center;
+
 }
 
 .footer-inner-container {
-    display: flex;
-    justify-content: space-between;
-    height: 50%;
-    width: 100%;
-    align-items: center;
-    padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;
+  align-items: center;
+  padding: 0 30px;
+  margin: 20px 0;
 }
+
 
 .flex {
     display: flex;

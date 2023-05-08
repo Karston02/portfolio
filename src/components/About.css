@@ -1,5 +1,5 @@
 .about-container {
-    height: 100vh;
+    height: auto;
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
