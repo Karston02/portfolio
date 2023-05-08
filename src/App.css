@@ -12,9 +12,7 @@
   src: url(../src/fonts/aboutme-header-font.otf)
 }
 
-body::-webkit-scrollbar{
-  display: none;
-}
+
 .home,
 .skills,
 .projects,

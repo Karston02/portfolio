@@ -10,37 +10,35 @@ import ReactOriginalWordmark from 'devicons-react/lib/icons/ReactOriginalWordmar
 
 function Skills() {
   return (
-    <section className="skills-container">
         <div className="skills-inner-container">
           <h1 className="skills-title">Languages & Technologies</h1>
           <div className="skill-box">
             <div className="skills-item">
               <SkillCircle className="stack"/>
-              <JavaOriginalWordmark className="stack" size={150}/>
+              <JavaOriginalWordmark className="stack" size={window.innerHeight/8}/>
             </div>
             <div className="skills-item">
               <SkillCircle className="stack"/>
-              <PythonOriginalWordmark className="stack" size={150}/>
+              <PythonOriginalWordmark className="stack" size={window.innerHeight/8}/>
             </div>
             <div className="skills-item">
               <SkillCircle className="stack"/>
-              <Html5OriginalWordmark className="stack" size={150}/>
+              <Html5OriginalWordmark className="stack" size={window.innerHeight/8}/>
             </div>
             <div className="skills-item">
-              <SkillCircle className="stack"/> 
-              <Css3OriginalWordmark className="stack" size={150}/> 
-            </div>
-            <div className="skills-item">
-              <SkillCircle className="stack"/>
-              <JavascriptOriginal className="stack" size={150}/>
+              <SkillCircle /> 
+              <Css3OriginalWordmark className="stack" size={window.innerHeight/8}/> 
             </div>
             <div className="skills-item">
               <SkillCircle className="stack"/>
-              <ReactOriginalWordmark className="stack" size={150}/>
+              <JavascriptOriginal className="stack" size={window.innerHeight/8}/>
+            </div>
+            <div className="skills-item">
+              <SkillCircle className="stack"/>
+              <ReactOriginalWordmark className="stack" size={window.innerHeight/8}/>
             </div>
           </div>
         </div>
-    </section>
   )
 }
 
