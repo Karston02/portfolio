@@ -2,6 +2,7 @@
     background-image: url(../images/galaxy-bg.jpeg);
     background-size: cover;
     position: relative;
+    height: calc(100vh - 140px);
 }
 
 .projects-container h1 {
@@ -14,13 +15,13 @@
     position: sticky;
 }
 .projects-inner-container {
-    height: 100vh;
-    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-size: cover;
-    padding-top: 0;
+    padding-top: 30px;
   }
   
   .project-card {
@@ -30,6 +31,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    border: 3px solid #4E0CB2;
   }
   
   .project-card img {
@@ -38,17 +40,11 @@
     object-fit: cover;
     flex-shrink: 0;
     border-bottom: 2px solid #242424;
-    border-top: 3px solid #4E0CB2;
-    border-right: 3px solid #4E0CB2;
-    border-left: 3px solid #4E0CB2;
   }
   
   .project-info {
     padding: 10px;
     background-color: #242424;;
-    border-bottom: 3px solid #4E0CB2;
-    border-right: 3px solid #4E0CB2;
-    border-left: 3px solid #4E0CB2;
     color: #fff;
   }
   
@@ -98,6 +94,10 @@
     }
   }
   @media only screen and (max-width: 768px) {
+
+    .projects-container {
+      height: auto;
+    }
     .projects-inner-container {
       flex-direction: row;
       align-items: center;
@@ -105,7 +105,7 @@
       padding-top: 20px;
     }
 
-  
+    
     .project-card {
       width: 90%;
       margin-bottom: 40px;

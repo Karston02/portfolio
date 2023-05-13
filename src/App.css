@@ -1,11 +1,21 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: myFont;
-  scroll-behavior: smooth;
-  overflow-y: auto;
 }
+
+html, body {
+  height: 100%;
+}
+
+.home,
+.skills,
+.projects,
+.about,
+.contact {
+  height: 100%;
+}
+
 
 @font-face {
   font-family: myFont;
@@ -14,15 +24,5 @@
 
 body::-webkit-scrollbar{
   display: none;
-}
-.home,
-.skills,
-.projects,
-.about,
-.contact {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
 }
 

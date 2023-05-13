@@ -10,32 +10,34 @@ import ReactOriginalWordmark from 'devicons-react/lib/icons/ReactOriginalWordmar
 
 function Skills() {
   return (
-        <div className="skills-inner-container">
+        <div className="skills-container">
           <h1 className="skills-title">Languages & Technologies</h1>
-          <div className="skill-box">
-            <div className="skills-item">
-              <SkillCircle className="stack"/>
-              <JavaOriginalWordmark className="stack" size={window.innerHeight/8}/>
-            </div>
-            <div className="skills-item">
-              <SkillCircle className="stack"/>
-              <PythonOriginalWordmark className="stack" size={window.innerHeight/8}/>
-            </div>
-            <div className="skills-item">
-              <SkillCircle className="stack"/>
-              <Html5OriginalWordmark className="stack" size={window.innerHeight/8}/>
-            </div>
-            <div className="skills-item">
-              <SkillCircle /> 
-              <Css3OriginalWordmark className="stack" size={window.innerHeight/8}/> 
-            </div>
-            <div className="skills-item">
-              <SkillCircle className="stack"/>
-              <JavascriptOriginal className="stack" size={window.innerHeight/8}/>
-            </div>
-            <div className="skills-item">
-              <SkillCircle className="stack"/>
-              <ReactOriginalWordmark className="stack" size={window.innerHeight/8}/>
+          <div className="skills-inner-container">
+            <div className="skill-box">
+              <div className="skills-item">
+                <SkillCircle className="stack"/>
+                <JavaOriginalWordmark className="stack icon-sizing" size={80}/>
+              </div>
+              <div className="skills-item">
+                <SkillCircle className="stack"/>
+                <PythonOriginalWordmark className="stack icon-sizing" size={80}/>
+              </div>
+              <div className="skills-item">
+                <SkillCircle className="stack"/>
+                <Html5OriginalWordmark className="stack icon-sizing" size={80}/>
+              </div>
+              <div className="skills-item">
+                <SkillCircle /> 
+                <Css3OriginalWordmark className="stack icon-sizing" size={80}/> 
+              </div>
+              <div className="skills-item">
+                <SkillCircle className="stack"/>
+                <JavascriptOriginal className="stack icon-sizing" size={80}/>
+              </div>
+              <div className="skills-item">
+                <SkillCircle className="stack"/>
+                <ReactOriginalWordmark className="stack icon-sizing" size={80}/>
+              </div>
             </div>
           </div>
         </div>

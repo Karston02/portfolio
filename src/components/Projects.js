@@ -18,7 +18,7 @@ function Projects() {
       <h1>Projects</h1>
       <div className="projects-inner-container">
         <div className="project-card">
-          <img src={movieSnap} alt="MovieHub Image" />
+          <img src={movieSnap} alt="MovieHub" />
           <div className="project-info">
             <div className="project-name">
               <h3>MovieHub</h3>
@@ -36,7 +36,7 @@ function Projects() {
           </div>
         </div>
         <div className="project-card">
-          <img src={portfolioSnap} alt="Portfolio Image" />
+          <img src={portfolioSnap} alt="Portfolio" />
           <div className="project-info">
             <div className="project-name">
               <h3>Personal Website</h3>
@@ -55,7 +55,7 @@ function Projects() {
           </div>
         </div>
         <div className="project-card">
-          <img src={blackjackSnap} alt="Blackjack Trainer Image" />
+          <img src={blackjackSnap} alt="Blackjack Trainer" />
           <div className="project-info">
             <div className="project-name">
               <h3>Blackjack Trainer</h3>

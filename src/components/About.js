@@ -19,11 +19,11 @@ function About() {
           <p>{beyondCode}</p>
         </div>
         <div className="aboutme-flex aboutme-design">
-          <Canvas className="stack" camera={{ fov: 25, position: [5, 5, 5] }}>
+          <Canvas className="stack" camera={{ fov: 25, position: [5, 5, 0] }}>
             <OrbitControls enableZoom={false} />
             <ambientLight intensity={1} />
             <directionalLight position={[7, 2, 3]}/>
-            <Sphere args={[1, 100, 200]} scale={1.2}>
+            <Sphere args={[1, 100, 200]} scale={1.4}>
               <MeshDistortMaterial
                 color="#4E0CB2"
                 attach="material"

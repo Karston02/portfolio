@@ -1,5 +1,5 @@
 .hero-container {
-    height: 100vh;
+    height: calc(100vh - 140px);
     background-image: url(../images/galaxy-bg.jpeg);
     scroll-snap-align: center;
     align-items: center;
@@ -12,6 +12,12 @@
   canvas {
     top: 0;
     left: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    .hero-container {
+      height: calc(100vh - 180px);
+    }
   }
   
   

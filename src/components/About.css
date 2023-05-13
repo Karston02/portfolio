@@ -1,5 +1,7 @@
 .about-container {
-    height: auto;
+    height: calc(100vh - 140px);
+    background-image: url(../images/galaxy-bg.jpeg);
+    background-size: cover;
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
@@ -9,10 +11,7 @@
   }
   
   .about-inner-container {
-    background-image: url(../images/galaxy-bg.jpeg);
-    background-size: cover;
     scroll-snap-align: center;
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -22,16 +21,12 @@
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
-    top:0;
-    left: 0;
   }
   
   .aboutme-flex {
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: transparent;
     flex: 1;
   }
   
@@ -47,7 +42,7 @@
 
   .aboutme-design {
     flex: 1.2;
-    justify-content: center;
+    position: relative;
   }
 
   .stack {
@@ -95,6 +90,7 @@
     animation: animate 1s infinite ease alternate;
     height: 450px;
     width: 370px;
+    padding-left: 150px;
   }
 
   @keyframes animate {
